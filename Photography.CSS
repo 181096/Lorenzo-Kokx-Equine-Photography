@@ -1,0 +1,148 @@
+body {
+    margin: auto;
+    padding: 50px;
+    color: #000000;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.rotateimg180 {
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(deg);
+}
+
+
+
+
+
+
+/*----Grid Setup Start----*/
+
+
+
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr 2fr 2fr 2fr;
+    grid-template-rows: auto;
+    grid-template-areas: "banner banner banner banner banner banner" "nav nav nav nav nav nav" "main main main main main main" "footer footer footer footer footer footer";
+    grid-gap: 4px;
+}
+
+/*---Grid Setup end---*/
+
+
+/*----Area styling start----*/
+.box {
+   
+    padding: 20px;
+    background-color: lightgray;
+}
+
+/*----Area Colouring----*/
+
+
+
+/** Logo, banner, footer backgrounds are the same**/
+
+.banner {
+    background-color: white;
+    color: #000000;
+    grid-area: banner;
+}
+
+.nav {
+    background-color: #000000;
+    color: white;
+    font-size: 150%;
+    text-align: center;
+    
+}
+
+.main {
+    background-color: white;
+    color: #000000;
+}
+
+
+
+.footer {
+    background-color: #000;
+    color: white;
+    text-align: right;
+}
+
+
+
+
+
+
+/*---- Area Specific ----*/
+
+
+.nav {
+    grid-area: nav;
+}
+
+.main {
+    grid-area: main;
+
+}
+
+
+
+.footer {
+    grid-area: footer;
+}
+
+/*----Area styling End----*/
+
+/*--heading font start---*/
+h1, h2, h3, h4 {
+    font-family: 'Roboto', sans-serif;
+}
+/*--heading font end---*/
+
+.nav a {
+    font-weight: bold;
+    color: white;
+}
+
+    .nav a:visited {
+        color: white;
+    }
+
+    .nav a:hover {
+        color: #000000;
+        text-decoration: none;
+    }
+
+/*---image start----*/
+img {
+    width: 1000px;
+    margin: 1px auto;
+     display: block;
+}
+
+
+#horseseye {
+    width: 753px;
+    margin: 1px auto;
+    display: block;
+     transform: rotate(90deg);
+}
+
+
+#whitehorse {
+    width: 500px;
+    margin: 1px auto;
+    display: block;
+   
+}
+
+
+/*---image end----*/
+
+/*---sidebar-start----*/
